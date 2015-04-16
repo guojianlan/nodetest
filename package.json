@@ -1,0 +1,48 @@
+{
+	"name": "nodetest",
+	"version": "1.0.0",
+	"description": "guojiantest",
+	"main": "app.js",
+	"scripts": {
+		"test": "guojian"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/guojianlan/nodetest.git"
+	},
+	"author": "guojian",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/guojianlan/nodetest/issues"
+	},
+	"dependencies": {
+		"angular": "^1.2.0",
+		"boom": "^2.6.1",
+		"ejs": "^2.3.1",
+		"es5-shim": "^4.1.0",
+		"gulp-copy": "0.0.2",
+		"handlebars": "^3.0.0",
+		"hapi": "^8.2.0",
+		"html-loader": "^0.2.3",
+		"jquery": "^1.11.2",
+		"jsx-loader": "^0.12.2",
+		"lodash": "^3.6.0",
+		"react": "^0.12.2",
+		"react-router": "^0.12.4"
+	},
+	"devDependencies": {
+		"gulp": "^3.8.11",
+		"gulp-clean": "^0.3.1",
+		"gulp-concat": "^2.5.2",
+		"gulp-imagemin": "^2.2.1",
+		"gulp-jshint": "^1.9.2",
+		"gulp-minify-css": "^0.4.6",
+		"gulp-rename": "^1.2.0",
+		"gulp-rev": "^3.0.1",
+		"gulp-rimraf": "^0.1.1",
+		"gulp-uglify": "^1.1.0",
+		"gulp-watch": "^4.1.1",
+		"gulp-webpack": "^1.2.0"
+	},
+	"homepage": "https://github.com/guojianlan/nodetest"
+}
