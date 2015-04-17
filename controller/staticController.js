@@ -5,6 +5,7 @@ var path = require('path');
 var rename = require('gulp-rename');
 var rimraf = require('gulp-rimraf');
 var Boom = require('boom');
+var jsxLoader = require('jsx-loader');
 
 
 
@@ -63,4 +64,11 @@ exports.handlerJsFile = function(req, reply) {
   } else {
     return reply(Boom.notFound('missin'));
   }
+};
+exports.handlePackFile = function(req, reply) {
+  var filePath = req.params.filePath;
+  var absPath = path.join(__dirname, '/../dist/' + filePath);
+  console.log(absPath);
+  var isExist = fs.existsSync(absPath);
+  return isExist ? reply.file(absPath) : reply(Boom.notFound('missing'));
 };

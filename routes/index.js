@@ -8,5 +8,10 @@ module.exports = function(server) {
 		method: 'GET',
 		path: '/{htmlPath*}',
 		handler: staticController.handleHtmlFile
+	},
+	{
+		method:'GET',
+		path:'/dist/{filePath*}',
+		handler: staticController.handlePackFile
 	}]);
 };
